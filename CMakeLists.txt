@@ -47,8 +47,7 @@ project(pico_w_wifi_iot C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-# Add executable. Default name is the project name, version 0.1
-
+# Add executable. Default name is the project name, version 0.1 
 add_executable(pico_w_wifi_iot pico_w_wifi_iot.c )
 
 pico_set_program_name(pico_w_wifi_iot "pico_w_wifi_iot")
@@ -68,12 +67,11 @@ target_include_directories(pico_w_wifi_iot PRIVATE
 )
 
 # Add any user requested libraries
-target_link_libraries(pico_w_wifi_iot 
+target_link_libraries(pico_w_wifi_iot
         pico_cyw43_arch_lwip_threadsafe_background
-        )
+)
 
 target_link_libraries(pico_w_wifi_iot
-    hardware_adc  # Inclue ADC
+    hardware_adc  # Inclui ADC
 )
 pico_add_extra_outputs(pico_w_wifi_iot)
-
