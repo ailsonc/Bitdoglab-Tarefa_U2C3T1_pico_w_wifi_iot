@@ -10,8 +10,8 @@
 #define BUTTON2_PIN 6
 #define JOY_X_PIN 26
 #define JOY_Y_PIN 27
-#define WIFI_SSID "Lemos"
-#define WIFI_PASS "a1b2c3d4@2!3500"
+#define WIFI_SSID "WIFI_SSID"
+#define WIFI_PASS "WIFI_PASS"
 
 // Limiares para o joystick
 #define JOY_CENTER_MIN 2000
